@@ -8,6 +8,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath "io.realm:realm-gradle-plugin:4.3.1"
         
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -24,4 +25,22 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    /*app dependencies*/
+    //Support library version
+    appSupportVersion = '26.1.0'
+
+    //Constrain layout version
+    appConstraintVersion = '1.0.2'
+
+    //Butterknife version
+    appButterknifeVersion = '8.8.1'
+
+    //Moxy version
+    appMoxyVersion = '1.5.3'
+
+    //Realm version
+    appRealmVersion = '4.3.1'
 }
