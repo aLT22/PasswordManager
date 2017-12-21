@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_account_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ib_redacting"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Nazvanie accounta"/>
+
+    <ImageButton
+        android:id="@+id/ib_redacting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="?android:colorBackground"
+        android:src="@drawable/ic_create_black_36dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_account_login"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_account_name"/>
+
+    <TextView
+        android:id="@+id/tv_account_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ib_redacting"
+        app:layout_constraintTop_toBottomOf="@id/tv_account_name"
+        tools:text="Login"/>
+
+</android.support.constraint.ConstraintLayout>
