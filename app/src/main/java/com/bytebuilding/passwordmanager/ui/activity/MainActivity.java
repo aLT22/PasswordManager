@@ -1,7 +1,9 @@
-package com.bytebuilding.passwordmanager;
+package com.bytebuilding.passwordmanager.ui.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.bytebuilding.passwordmanager.R;
 
 public class MainActivity extends AppCompatActivity {
 
